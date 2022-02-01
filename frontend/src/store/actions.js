@@ -25,7 +25,7 @@ export const addList = (todo) => {
 }
 
 // 2 action pour supprimer un todo
-export const deleteList = (index) => {
+export const deleteTodo = (index) => {
     return {
         type: DELETE_TODO,
         index
@@ -41,9 +41,9 @@ export const chekedList = (index) => {
 }
 
 // 4 action pour ajouter un filtre un todo
-export const choiceFilter = (selectChoice) => {
+export const choiceFilter = (filter) => {
     return {
         type: CHOOSE_FILTER,
-        selectChoice
+        filter
     }
 }
